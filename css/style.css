@@ -43,21 +43,18 @@ img {
 .card__jonathan {
     background-color: var(--very-dark-grayish-blue);
 }
-.card__jeanette {
+.card__jeanette,
+.card__kira {
     background-color: var(--white);
-    color: var(--very-dark-blackish-blue) !important;
+    color: var(--very-dark-grayish-blue) !important;
 }
 .card__patrick {
     background-color: var(--very-dark-blackish-blue);
 }
-.card__kira {
-    background-color: var(--white);
-    color: var(--very-dark-blackish-blue) !important;
-}
 .card__container {
     margin: 5rem auto;
     display: grid;
-    gap: 1.5rem;
+    gap: 1.6rem;
 }
 .testimonial__card {
     color: var(--white);
@@ -75,4 +72,36 @@ img {
     width: 30px;
     height: 30px;
     border-radius: 50%;
+}
+.user__name {
+    font-size: .8rem;
+}
+.user__title:not(.card__jeanette .user__title, .card__kira .user__title) {
+    font-size: .65rem;
+    color: hsl(0, 0%, 100%, 0.5);
+}
+.testimonial__summary {
+    font-size: 1.24rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.testimonial__review:not(.card__jeanette .testimonial__review, .card__kira .testimonial__review) {
+    font-size: .8rem;
+    color: hsl(0, 0%, 100%, 0.7);
+}
+.card__jeanette .user__title,
+.card__kira .user__title {
+    color: hsl(217, 19%, 35%, 0.5);
+    font-size: .65rem;
+}
+.card__jeanette .testimonial__review,
+.card__kira .testimonial__review {
+    font-size: .8rem;
+    color: hsl(217, 19%, 35%, 0.7);
+}
+.card__daniel .user__img {
+    border: 2px solid hsl(264, 83%, 70%);
+}
+.card__patrick .user__img {
+    border: 2px solid var(--moderate-violet);
 }
